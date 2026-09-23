@@ -118,6 +118,11 @@
 </html>
 
 <style>
+     /* Variables because changing one thing over and over gets annoying :'3 */
+    :root {
+        --padding: 10px;
+    }
+    
     body {
         /* If there is no image the background will be white */
         background-color: white;
@@ -137,7 +142,7 @@
         with dotted, dashed, double, ridge, or inset!
          (There's a few more, feel free to look it up!) */
         border: black 2px solid;
-        padding: 10px;
+        padding: var(--padding);
     }
 
     #container {
@@ -160,8 +165,8 @@
 
         /* "margin" adds some space around your divs, if you want it 
         somewhere specific use top, bottom, left, or right!! */
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: var(--padding);
+        margin-bottom: var(--padding);
     }
 
     main {
@@ -181,11 +186,11 @@
     }
 
     #left {
-        margin-right: 10px;
+        margin-right: var(--padding);
     }
 
     #right {
-        margin-left: 10px;
+        margin-left: var(--padding);
     }
 
     footer {
@@ -216,8 +221,8 @@
 
             /* Adds some space on mobile mode >:D
             (Shrink the page to see this) */
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: var(--padding);
+            margin-bottom: var(--padding);
         }
     }
 </style>
