@@ -7,8 +7,10 @@
 ![image alt](https://github.com/AnonEmmie/My-Site-Layout/blob/4164c1d773ddf56ba4eab190f02893ab62f38cf9/sitePreview.png)
 
 <p>For ANYONE getting into coding I highly HIGHLY recommend these resources:</p>
-1. https://petrapixel.neocities.org/
-2. https://www.w3schools.com/html/html_i
-3. https://scripted.neocities.org/
-
+<ol>
+  <li><a href="https://petrapixel.neocities.org/">Petrapixel</a><li>
+  <li><a href="https://www.w3schools.com/html/html_i">W3 Schools</li>
+  <li><a href="https://scripted.neocities.org/">Scripted Tutorials</li>
+</ol>
+    
 <p>Thanks 4 reading!!!!</p>
