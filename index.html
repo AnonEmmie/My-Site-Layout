@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Site Title Here! :3</title>
+
+    <!-- This is ur site's icon!!! (The thing before the title)-->
+    <link rel="icon" href="Image goes here">
+
+    <!-- If you want to have your Style.CSS separate add 
+     " <link rel="stylesheet href="(path to your Style.CSS file)">"
+     and u should be good! Make sure to NOT copy over the <style></style> tags 
+     copy & past the INSIDESSS!!! -->
+
+    <!-- HEADS UP!!! Cachbusting will make sure ur site updates!! 
+      CHECK OUT THE LINK FOR MORE INFOO!!! Otherwise js ignore this!-->
+
+    <!-- CACHEBUSTING. https://petrapixel.neocities.org/coding/cachebusting (Copy to all html) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+
+            // Path to your CSS file (like usual), or empty ("") if you don't have one:
+
+            const CSS_FILE_PATH = "style.css";
+
+
+            // Path to your JS file (like usual), or empty ("") if you don't have one:
+
+            const JS_FILE_PATH = "script.js";
+
+
+            function loadScript(src) {
+
+                const script = document.createElement("script");
+
+                script.src = src + "?nocache=" + new Date().getTime();
+
+                script.async = true;
+
+                document.head.appendChild(script);
+
+            }
+
+            function loadCSS(href) {
+
+                const link = document.createElement("link");
+
+                link.rel = "stylesheet";
+
+                link.href = href + "?nocache=" + new Date().getTime();
+
+                document.head.appendChild(link);
+
+            }
+
+            if (JS_FILE_PATH) loadScript(JS_FILE_PATH);
+
+            if (CSS_FILE_PATH) loadCSS(CSS_FILE_PATH);
+        });
+    </script>
+    <!-- CACHEBUSTING. https://petrapixel.neocities.org/coding/cachebusting (End of script) -->
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <div id="content">
+            <div id="left">
+                <h4>Navigation!!</h4>
+
+                <a href="/index.html">Link Example</a>
+
+            </div>
+
+            <main>
+                HIHII I'm <b>Me</b>!! :3
+                <p>About me, I am <i>really</i> <b>kewl</b> and I like <b>stuff</b>! </p>
+
+                <p>
+                    Just to show you what you can do, have you tried <mark>highlighting</mark>? Or maybe
+                    you wanted to <del>cross out</del> delete some words? <small>What if you don't feel like talking
+                        loud right now...</small>
+                </p>
+
+                <!-- The "alt" is a back up in case the image doesn't show!!-->
+                <img src="https://media1.tenor.com/m/JLfS0zgUuOYAAAAC/gato-cat.gif" alt="Cat image">
+
+                <p>Likes</p>
+                <ul>
+                    <li>Thing 1</li>
+                    <li>Thing 2</li>
+                    <li>Thing 3</li>
+                </ul>
+
+                <p>Ranked Likes <small>They are just numbered</small></p>
+                <ol>
+                    <li>Thing 2</li>
+                    <li>Thing 1</li>
+                    <li>Thing 3</li>
+                </ol>
+            </main>
+
+            <div id="right">
+                <h4>Right Sidebar!!</h4>
+
+            </div>
+        </div>
+
+        <footer>Last updated 9/22/26, happy coding!!</footer>
+    </div>
+</body>
+
+</html>
+
+<style>
+    body {
+        /* If there is no image the background will be white */
+        background-color: white;
+
+        /* This is how you add BG images!! */
+        background-image: url('Image goes here');
+        background-size: 150px;
+    }
+
+    #container,
+    header,
+    #left,
+    #right,
+    main,
+    footer {
+        /* There are many kinds of borders!! Try replacing "solid" 
+        with dotted, dashed, double, ridge, or inset!
+         (There's a few more, feel free to look it up!) */
+        border: black 2px solid;
+        padding: 10px;
+    }
+
+    #container {
+        max-width: 700px;
+
+        /* This right here centers the site! */
+        margin: 0 auto;
+
+        /* "color" will change the color of any text within this div
+        unless it is overridden!*/
+        color: black;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #content {
+        display: flex;
+
+        /* "margin" adds some space around your divs, if you want it 
+        somewhere specific use top, bottom, left, or right!! */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    /* This here changes the color of text when bolded you can do this for 
+    italics (<i></i>) too by replacing b with i!! */
+    b {
+        color: gray;
+    }
+
+    #left,
+    #right {
+        width: 200px;
+        text-align: center;
+    }
+
+    #left {
+        margin-right: 10px;
+    }
+
+    #right {
+        margin-left: 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    /* Mobile support!!!!!! This will change the size and layout of your
+    site depending on the width you put here! Any screen under 600px
+    will be considered mobile! */
+    @media only screen and (max-width: 600px) {
+        #content {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        #left,
+        #right {
+            width: 100%;
+
+            /* Border-box is a LIFE SAVER!!! Use this whenever your divs
+            are trying to break out (clipping or expanding too much) */
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        main {
+            box-sizing: border-box;
+
+            /* Adds some space on mobile mode >:D
+            (Shrink the page to see this) */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+</style>
+
+<!-- Feel free to delete my comments once u become pro
+ and don't need any help!! >:3 -->
