@@ -10,7 +10,7 @@
 <ol>
   <li><a href="https://petrapixel.neocities.org/">Petrapixel</a></li>
   <li><a href="https://www.w3schools.com/html/html_i">W3 Schools</li>
-  <li><a href="https://scripted.neocities.org/">Scripted Tutorials</li>
+  <li><a href="https://scripted.neocities.org/">Scripted Resources</li>
 </ol>
     
 <p>Thanks 4 reading!!!!</p>
